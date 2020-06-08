@@ -6,9 +6,36 @@
   --super-tabs-toolbar-background: transparent;
   --st-indicator-color: var(--ion-color-primary);
   --st-scrollable-toolbar-padding-left: 8px;
+
+  super-tab-button {
+    --st-base-color-active: var(--ion-color-dark);
+    --st-base-color-inactive: var(--ion-color-dark);
+    --st-label-font-size: 17px;
+    --st-label-text-transform: capitalize;
+  }
 }
 
 .card-custom {
   border-radius: 0;
   margin: 0 0 16px 0;
+}
+
+.card-thumbnail {
+  position: relative;
+  height: 250px;
+  background-color: var(--ion-color-medium);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .card-caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 16px;
+    font-size: 20px;
+    color: #fff;
+    background-image: linear-gradient(to top, rgba(0,0,0,.66), rgba(0,0,0,0));
+  }
 }

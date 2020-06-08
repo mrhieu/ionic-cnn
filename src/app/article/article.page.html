@@ -1,0 +1,80 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon slot="icon-only" name="radio-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon slot="icon-only" name="share-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_4.png)'"></div>
+
+  <div class="article-header ion-padding">
+    <div class="article-title">
+      Germany and US leading the way in crucial period for women's football
+    </div>
+    <div class="article-author">
+      By Tony Stark, CNN Business
+    </div>
+    <div class="article-timestamp">
+      Updated at 5:38 AM on Saturday, June 6
+    </div>
+    <div class="header-divider"></div>
+  </div>
+
+  <div class="article-body ion-padding">
+    <p><strong>New York (CNN Business) - </strong> Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+    id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+    id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+    id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+    id est laborum. <ion-icon name="square" size="small" color="primary"></ion-icon></p>
+  </div>
+
+  <div class="recommendation">
+    <div class="ion-padding-start ion-padding-end">
+      <ion-text color="medium">PAID CONTENT</ion-text>
+    </div>
+
+    <ion-card *ngFor="let i of [0,1,2]">
+      <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_' + (i%4+1) + '.png)'"></div>
+
+      <ion-card-content>
+        Germany and US leading the way in crucial period for women's football
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

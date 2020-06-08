@@ -1,0 +1,26 @@
+.article-header {
+  .article-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .article-author {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .article-timestamp {
+    color: var(--ion-color-medium);
+  }
+
+  .header-divider {
+    height: 2px;
+    width: 50px;
+    background-color: var(--ion-color-medium);
+    margin-top: 16px;
+  }
+}
+
+.article-body {
+  line-height: 1.4em;
+}

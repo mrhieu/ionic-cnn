@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-button fill="clear">
@@ -45,19 +45,68 @@
     <!-- TAB 0 -->
     <super-tab>
       <ion-content>
-        <ion-card class="card-custom" *ngFor="let i of [0,1,2,3,4,5,6,7]">
-          <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_' + (i%4+1) + '.png)'">
+        <ion-card class="card-custom" routerLink="/tabs/tab1/article">
+          <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_4.png)'">
             <div class="card-caption">
-              There's a growing call to defund the police. Here's what it means
+              Germany and US leading the way in crucial period for women's football
             </div>
           </div>
+          <ion-list>
+            <ion-item lines="none">
+              <ion-icon name="document-outline" slot="start" size="small"></ion-icon>
+              <ion-label class="ion-text-wrap">
+                <h3>Uncertainties' surround next year's Olympics, says Tokyo governor Yuriko Koike</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-icon name="document-outline" slot="start" size="small"></ion-icon>
+              <ion-label class="ion-text-wrap">
+                <h3>Bundesliga's longest-serving club Werder faces relegation</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-icon name="play-circle-outline" slot="start" size="small"></ion-icon>
+              <ion-label class="ion-text-wrap">
+                <h3>UFC champion Conor McGregor announces his retirement -- for the third time</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item lines="full">
+              <ion-icon name="document-outline" slot="start" size="small"></ion-icon>
+              <ion-label class="ion-text-wrap">
+                <h3>She refused funding and now has two jobs to fund her Olympic dream</h3>
+              </ion-label>
+            </ion-item>
+          </ion-list>
           <ion-row>
-            <ion-col></ion-col>
+            <ion-col class="ion-padding">
+              2h
+            </ion-col>
             <ion-col size="auto">
-              <ion-button fill="clear" size="small">
+              <ion-button fill="clear" size="small" color="medium">
                 <ion-icon slot="icon-only" name="share-outline"></ion-icon>
               </ion-button>
-              <ion-button fill="clear" size="small">
+              <ion-button fill="clear" size="small" color="medium">
+                <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+        <ion-card class="card-custom" routerLink="/tabs/tab1/article" *ngFor="let i of [0,1,2,3,4,5,6,7]">
+          <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_' + (i%4+1) + '.png)'">
+            <div class="card-caption">
+              Germany and US leading the way in crucial period for women's football
+            </div>
+          </div>
+
+          <ion-row>
+            <ion-col class="ion-padding">
+              2h
+            </ion-col>
+            <ion-col size="auto">
+              <ion-button fill="clear" size="small" color="medium">
+                <ion-icon slot="icon-only" name="share-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" size="small" color="medium">
                 <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
               </ion-button>
             </ion-col>
@@ -66,18 +115,78 @@
       </ion-content>
     </super-tab>
     <super-tab>
-      <ion-content class="ion-padding">
-        <h2>HEllo</h2>
+      <ion-content>
+        <ion-card class="card-custom" routerLink="/tabs/tab1/article" *ngFor="let i of [0,1,2,3,4,5,6,7]">
+          <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_' + (i%4+1) + '.png)'">
+            <div class="card-caption">
+              Germany and US leading the way in crucial period for women's football
+            </div>
+          </div>
+
+          <ion-row>
+            <ion-col class="ion-padding">
+              2h
+            </ion-col>
+            <ion-col size="auto">
+              <ion-button fill="clear" size="small" color="medium">
+                <ion-icon slot="icon-only" name="share-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" size="small" color="medium">
+                <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
       </ion-content>
     </super-tab>
     <super-tab>
-      <ion-content class="ion-padding">
-        <h2>HEllo</h2>
+      <ion-content>
+        <ion-card class="card-custom" routerLink="/tabs/tab1/article" *ngFor="let i of [0,1,2,3,4,5,6,7]">
+          <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_' + (i%4+1) + '.png)'">
+            <div class="card-caption">
+              Germany and US leading the way in crucial period for women's football
+            </div>
+          </div>
+
+          <ion-row>
+            <ion-col class="ion-padding">
+              2h
+            </ion-col>
+            <ion-col size="auto">
+              <ion-button fill="clear" size="small" color="medium">
+                <ion-icon slot="icon-only" name="share-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" size="small" color="medium">
+                <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
       </ion-content>
     </super-tab>
     <super-tab>
-      <ion-content class="ion-padding">
-        <h2>HEllo</h2>
+      <ion-content>
+        <ion-card class="card-custom" routerLink="/tabs/tab1/article" *ngFor="let i of [0,1,2,3,4,5,6,7]">
+          <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_' + (i%4+1) + '.png)'">
+            <div class="card-caption">
+              Germany and US leading the way in crucial period for women's football
+            </div>
+          </div>
+
+          <ion-row>
+            <ion-col class="ion-padding">
+              2h
+            </ion-col>
+            <ion-col size="auto">
+              <ion-button fill="clear" size="small" color="medium">
+                <ion-icon slot="icon-only" name="share-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" size="small" color="medium">
+                <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
       </ion-content>
     </super-tab>
   </super-tabs-container>

@@ -1,17 +1,35 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button fill="clear">
+        <ion-icon slot="icon-only" name="radio-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>
-      Tab 3
+      Saved Stories
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <ion-card class="card-custom" *ngFor="let i of [0,1,2,3,4,5,6,7]">
+    <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_' + (i%4+1) + '.png)'">
+      <div class="card-caption">
+        Germany and US leading the way in crucial period for women's football
+      </div>
+    </div>
+    <ion-row>
+      <ion-col class="ion-padding">
+        2h
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button fill="clear" size="small" color="medium">
+          <ion-icon slot="icon-only" name="share-outline"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" size="small" color="primary">
+          <ion-icon slot="icon-only" name="bookmark"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 </ion-content>
