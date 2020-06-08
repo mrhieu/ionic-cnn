@@ -1,3 +1,14 @@
 :root {
 
 }
+
+.super-tabs-toolbar-custom {
+  --super-tabs-toolbar-background: transparent;
+  --st-indicator-color: var(--ion-color-primary);
+  --st-scrollable-toolbar-padding-left: 8px;
+}
+
+.card-custom {
+  border-radius: 0;
+  margin: 0 0 16px 0;
+}

@@ -1,17 +1,84 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button fill="clear">
+        <ion-icon slot="icon-only" name="radio-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>
-      Tab 1
+      CNN
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+      	Watch TV
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<super-tabs
+  [activeTabIndex]="0"
+  [config]="{ avoidElements: true, maxDragAngle: 30 }"
+>
+  <super-tabs-toolbar slot="top" scrollable class="super-tabs-toolbar-custom">
+    <super-tab-button>
+      <ion-label>Top News</ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-label>World</ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-label>Politics</ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-label>Business</ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-label>Health</ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-label>Style</ion-label>
+    </super-tab-button>
+  </super-tabs-toolbar>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <super-tabs-container>
+    <!-- TAB 0 -->
+    <super-tab>
+      <ion-content>
+        <ion-card class="card-custom" *ngFor="let i of [0,1,2,3,4,5,6,7]">
+          <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_' + (i%4+1) + '.png)'">
+            <div class="card-caption">
+              There's a growing call to defund the police. Here's what it means
+            </div>
+          </div>
+          <ion-row>
+            <ion-col></ion-col>
+            <ion-col size="auto">
+              <ion-button fill="clear" size="small">
+                <ion-icon slot="icon-only" name="share-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" size="small">
+                <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content class="ion-padding">
+        <h2>HEllo</h2>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content class="ion-padding">
+        <h2>HEllo</h2>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content class="ion-padding">
+        <h2>HEllo</h2>
+      </ion-content>
+    </super-tab>
+  </super-tabs-container>
+</super-tabs>
