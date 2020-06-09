@@ -2,6 +2,11 @@
 
 }
 
+.container-view {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .super-tabs-toolbar-custom {
   --super-tabs-toolbar-background: transparent;
   --st-indicator-color: var(--ion-color-primary);
@@ -38,4 +43,18 @@
     color: #fff;
     background-image: linear-gradient(to top, rgba(0,0,0,.66), rgba(0,0,0,0));
   }
+}
+
+.ion-list-header-custom {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.category-name {
+  color: var(--ion-color-medium);
+  font-size: 12px;
+}
+
+.ion-thumbnail-custom {
+  width: 74px;
 }
